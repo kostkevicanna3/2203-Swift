@@ -1,0 +1,466 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6E61416A53C594B82069FFC9 /* Pods_FoolsMeisterCards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE86E5644F6D0D5F3BFBE5E3 /* Pods_FoolsMeisterCards.framework */; };
+		724140C02E77F7E4000F0503 /* FoolsMeisterCardsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140BE2E77F7E4000F0503 /* FoolsMeisterCardsApp.swift */; };
+		724140C12E77F7E4000F0503 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 724140BD2E77F7E4000F0503 /* Assets.xcassets */; };
+		724140C82E77F836000F0503 /* FCLaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140C52E77F836000F0503 /* FCLaunchView.swift */; };
+		724140C92E77F836000F0503 /* FCHomeWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140C32E77F836000F0503 /* FCHomeWebView.swift */; };
+		724140CE2E77F83D000F0503 /* ShapeStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140CC2E77F83D000F0503 /* ShapeStyle+Extensions.swift */; };
+		724140CF2E77F83D000F0503 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140CB2E77F83D000F0503 /* Color+Extensions.swift */; };
+		724140D02E77F83D000F0503 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140CA2E77F83D000F0503 /* View+Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0D2EEE3101DCDC2D8585A3AC /* Pods-FoolsMeisterCards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoolsMeisterCards.release.xcconfig"; path = "Target Support Files/Pods-FoolsMeisterCards/Pods-FoolsMeisterCards.release.xcconfig"; sourceTree = "<group>"; };
+		724140AE2E77F7CF000F0503 /* FoolsMeisterCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoolsMeisterCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		724140BD2E77F7E4000F0503 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		724140BE2E77F7E4000F0503 /* FoolsMeisterCardsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoolsMeisterCardsApp.swift; sourceTree = "<group>"; };
+		724140C32E77F836000F0503 /* FCHomeWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCHomeWebView.swift; sourceTree = "<group>"; };
+		724140C52E77F836000F0503 /* FCLaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FCLaunchView.swift; sourceTree = "<group>"; };
+		724140CA2E77F83D000F0503 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		724140CB2E77F83D000F0503 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		724140CC2E77F83D000F0503 /* ShapeStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+Extensions.swift"; sourceTree = "<group>"; };
+		724140D12E77FA2A000F0503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BE86E5644F6D0D5F3BFBE5E3 /* Pods_FoolsMeisterCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoolsMeisterCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC5C3F9932E2B7B1C81A0EAB /* Pods-FoolsMeisterCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoolsMeisterCards.debug.xcconfig"; path = "Target Support Files/Pods-FoolsMeisterCards/Pods-FoolsMeisterCards.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		724140AB2E77F7CF000F0503 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E61416A53C594B82069FFC9 /* Pods_FoolsMeisterCards.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		724140A52E77F7CF000F0503 = {
+			isa = PBXGroup;
+			children = (
+				724140BF2E77F7E4000F0503 /* FoolsMeisterCards */,
+				724140AF2E77F7CF000F0503 /* Products */,
+				C46C50ABB15A42DFAA776AE2 /* Pods */,
+				975DFFFBFF4ABD33EAF2647F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		724140AF2E77F7CF000F0503 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				724140AE2E77F7CF000F0503 /* FoolsMeisterCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		724140BF2E77F7E4000F0503 /* FoolsMeisterCards */ = {
+			isa = PBXGroup;
+			children = (
+				724140D12E77FA2A000F0503 /* Info.plist */,
+				724140CD2E77F83D000F0503 /* Extensions */,
+				724140C72E77F836000F0503 /* Screens */,
+				724140C22E77F7E7000F0503 /* App */,
+				724140BD2E77F7E4000F0503 /* Assets.xcassets */,
+			);
+			path = FoolsMeisterCards;
+			sourceTree = "<group>";
+		};
+		724140C22E77F7E7000F0503 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				724140BE2E77F7E4000F0503 /* FoolsMeisterCardsApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		724140C42E77F836000F0503 /* HomeWebScreen */ = {
+			isa = PBXGroup;
+			children = (
+				724140C32E77F836000F0503 /* FCHomeWebView.swift */,
+			);
+			path = HomeWebScreen;
+			sourceTree = "<group>";
+		};
+		724140C62E77F836000F0503 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				724140C52E77F836000F0503 /* FCLaunchView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		724140C72E77F836000F0503 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				724140C42E77F836000F0503 /* HomeWebScreen */,
+				724140C62E77F836000F0503 /* LaunchScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		724140CD2E77F83D000F0503 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				724140CA2E77F83D000F0503 /* View+Extensions.swift */,
+				724140CB2E77F83D000F0503 /* Color+Extensions.swift */,
+				724140CC2E77F83D000F0503 /* ShapeStyle+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		975DFFFBFF4ABD33EAF2647F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE86E5644F6D0D5F3BFBE5E3 /* Pods_FoolsMeisterCards.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C46C50ABB15A42DFAA776AE2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC5C3F9932E2B7B1C81A0EAB /* Pods-FoolsMeisterCards.debug.xcconfig */,
+				0D2EEE3101DCDC2D8585A3AC /* Pods-FoolsMeisterCards.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		724140AD2E77F7CF000F0503 /* FoolsMeisterCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 724140BA2E77F7D0000F0503 /* Build configuration list for PBXNativeTarget "FoolsMeisterCards" */;
+			buildPhases = (
+				83AB3373C451F2FFC5965176 /* [CP] Check Pods Manifest.lock */,
+				724140AA2E77F7CF000F0503 /* Sources */,
+				724140AB2E77F7CF000F0503 /* Frameworks */,
+				724140AC2E77F7CF000F0503 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoolsMeisterCards;
+			productName = FoolsMeisterCards;
+			productReference = 724140AE2E77F7CF000F0503 /* FoolsMeisterCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		724140A62E77F7CF000F0503 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 1630;
+				TargetAttributes = {
+					724140AD2E77F7CF000F0503 = {
+						CreatedOnToolsVersion = 16.3;
+					};
+				};
+			};
+			buildConfigurationList = 724140A92E77F7CF000F0503 /* Build configuration list for PBXProject "FoolsMeisterCards" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 724140A52E77F7CF000F0503;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 55;
+			productRefGroup = 724140AF2E77F7CF000F0503 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				724140AD2E77F7CF000F0503 /* FoolsMeisterCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		724140AC2E77F7CF000F0503 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724140C12E77F7E4000F0503 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		83AB3373C451F2FFC5965176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FoolsMeisterCards-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		724140AA2E77F7CF000F0503 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				724140CE2E77F83D000F0503 /* ShapeStyle+Extensions.swift in Sources */,
+				724140CF2E77F83D000F0503 /* Color+Extensions.swift in Sources */,
+				724140D02E77F83D000F0503 /* View+Extensions.swift in Sources */,
+				724140C02E77F7E4000F0503 /* FoolsMeisterCardsApp.swift in Sources */,
+				724140C82E77F836000F0503 /* FCLaunchView.swift in Sources */,
+				724140C92E77F836000F0503 /* FCHomeWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		724140B82E77F7D0000F0503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		724140B92E77F7D0000F0503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		724140BB2E77F7D0000F0503 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC5C3F9932E2B7B1C81A0EAB /* Pods-FoolsMeisterCards.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99Y7AUQG6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoolsMeisterCards/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fools Meister Cards";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.annacardplay.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Debug;
+		};
+		724140BC2E77F7D0000F0503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D2EEE3101DCDC2D8585A3AC /* Pods-FoolsMeisterCards.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 99Y7AUQG6Y;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FoolsMeisterCards/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fools Meister Cards";
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.annacardplay.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				XROS_DEPLOYMENT_TARGET = 2.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		724140A92E77F7CF000F0503 /* Build configuration list for PBXProject "FoolsMeisterCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724140B82E77F7D0000F0503 /* Debug */,
+				724140B92E77F7D0000F0503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		724140BA2E77F7D0000F0503 /* Build configuration list for PBXNativeTarget "FoolsMeisterCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				724140BB2E77F7D0000F0503 /* Debug */,
+				724140BC2E77F7D0000F0503 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 724140A62E77F7CF000F0503 /* Project object */;
+}

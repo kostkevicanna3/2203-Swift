@@ -1,0 +1,6 @@
+framework module Pods_FoolsMeisterCards {
+  umbrella header "Pods-FoolsMeisterCards-umbrella.h"
+
+  export *
+  module * { export * }
+}
