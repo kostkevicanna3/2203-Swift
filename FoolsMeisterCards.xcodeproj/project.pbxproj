@@ -15,6 +15,15 @@
 		724140CE2E77F83D000F0503 /* ShapeStyle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140CC2E77F83D000F0503 /* ShapeStyle+Extensions.swift */; };
 		724140CF2E77F83D000F0503 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140CB2E77F83D000F0503 /* Color+Extensions.swift */; };
 		724140D02E77F83D000F0503 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724140CA2E77F83D000F0503 /* View+Extensions.swift */; };
+		724141A22E816D37000F0503 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141A02E816D37000F0503 /* AppDelegate.swift */; };
+		724141A32E816D37000F0503 /* AppEntryPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141A12E816D37000F0503 /* AppEntryPoint.swift */; };
+		724141A52E816D50000F0503 /* TextScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141A42E816D50000F0503 /* TextScreen.swift */; };
+		724141AB2E816D8E000F0503 /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141A92E816D8E000F0503 /* PrivacyView.swift */; };
+		724141B22E816D95000F0503 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 724141AC2E816D95000F0503 /* index.html */; };
+		724141B32E816D95000F0503 /* WebSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141B02E816D95000F0503 /* WebSheetViewController.swift */; };
+		724141B42E816D95000F0503 /* WebViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141AF2E816D95000F0503 /* WebViewCoordinator.swift */; };
+		724141B52E816D95000F0503 /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141AE2E816D95000F0503 /* WebViewContainer.swift */; };
+		724141B62E816D95000F0503 /* UserAgentBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724141AD2E816D95000F0503 /* UserAgentBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +37,15 @@
 		724140CB2E77F83D000F0503 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		724140CC2E77F83D000F0503 /* ShapeStyle+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ShapeStyle+Extensions.swift"; sourceTree = "<group>"; };
 		724140D12E77FA2A000F0503 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		724141A02E816D37000F0503 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		724141A12E816D37000F0503 /* AppEntryPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntryPoint.swift; sourceTree = "<group>"; };
+		724141A42E816D50000F0503 /* TextScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextScreen.swift; sourceTree = "<group>"; };
+		724141A92E816D8E000F0503 /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		724141AC2E816D95000F0503 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		724141AD2E816D95000F0503 /* UserAgentBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAgentBuilder.swift; sourceTree = "<group>"; };
+		724141AE2E816D95000F0503 /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		724141AF2E816D95000F0503 /* WebViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewCoordinator.swift; sourceTree = "<group>"; };
+		724141B02E816D95000F0503 /* WebSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSheetViewController.swift; sourceTree = "<group>"; };
 		BE86E5644F6D0D5F3BFBE5E3 /* Pods_FoolsMeisterCards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoolsMeisterCards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC5C3F9932E2B7B1C81A0EAB /* Pods-FoolsMeisterCards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoolsMeisterCards.debug.xcconfig"; path = "Target Support Files/Pods-FoolsMeisterCards/Pods-FoolsMeisterCards.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +95,8 @@
 		724140C22E77F7E7000F0503 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				724141A02E816D37000F0503 /* AppDelegate.swift */,
+				724141A12E816D37000F0503 /* AppEntryPoint.swift */,
 				724140BE2E77F7E4000F0503 /* FoolsMeisterCardsApp.swift */,
 			);
 			path = App;
@@ -101,6 +121,8 @@
 		724140C72E77F836000F0503 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				724141B12E816D95000F0503 /* Web */,
+				724141AA2E816D8E000F0503 /* PrivacyScreen */,
 				724140C42E77F836000F0503 /* HomeWebScreen */,
 				724140C62E77F836000F0503 /* LaunchScreen */,
 			);
@@ -110,11 +132,32 @@
 		724140CD2E77F83D000F0503 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				724141A42E816D50000F0503 /* TextScreen.swift */,
 				724140CA2E77F83D000F0503 /* View+Extensions.swift */,
 				724140CB2E77F83D000F0503 /* Color+Extensions.swift */,
 				724140CC2E77F83D000F0503 /* ShapeStyle+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		724141AA2E816D8E000F0503 /* PrivacyScreen */ = {
+			isa = PBXGroup;
+			children = (
+				724141A92E816D8E000F0503 /* PrivacyView.swift */,
+			);
+			path = PrivacyScreen;
+			sourceTree = "<group>";
+		};
+		724141B12E816D95000F0503 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				724141AC2E816D95000F0503 /* index.html */,
+				724141AD2E816D95000F0503 /* UserAgentBuilder.swift */,
+				724141AE2E816D95000F0503 /* WebViewContainer.swift */,
+				724141AF2E816D95000F0503 /* WebViewCoordinator.swift */,
+				724141B02E816D95000F0503 /* WebSheetViewController.swift */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 		975DFFFBFF4ABD33EAF2647F /* Frameworks */ = {
@@ -195,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				724140C12E77F7E4000F0503 /* Assets.xcassets in Resources */,
+				724141B22E816D95000F0503 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +275,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				724140CE2E77F83D000F0503 /* ShapeStyle+Extensions.swift in Sources */,
+				724141A52E816D50000F0503 /* TextScreen.swift in Sources */,
 				724140CF2E77F83D000F0503 /* Color+Extensions.swift in Sources */,
 				724140D02E77F83D000F0503 /* View+Extensions.swift in Sources */,
 				724140C02E77F7E4000F0503 /* FoolsMeisterCardsApp.swift in Sources */,
 				724140C82E77F836000F0503 /* FCLaunchView.swift in Sources */,
+				724141A22E816D37000F0503 /* AppDelegate.swift in Sources */,
+				724141A32E816D37000F0503 /* AppEntryPoint.swift in Sources */,
 				724140C92E77F836000F0503 /* FCHomeWebView.swift in Sources */,
+				724141AB2E816D8E000F0503 /* PrivacyView.swift in Sources */,
+				724141B32E816D95000F0503 /* WebSheetViewController.swift in Sources */,
+				724141B42E816D95000F0503 /* WebViewCoordinator.swift in Sources */,
+				724141B52E816D95000F0503 /* WebViewContainer.swift in Sources */,
+				724141B62E816D95000F0503 /* UserAgentBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

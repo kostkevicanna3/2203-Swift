@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Loading Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      font-family: Verdana, sans-serif;
+      color: #000000;
+      padding: 20px;
+      margin: 0;
+      background: linear-gradient(to bottom, #e0eafc, #cfdef3);
+      min-height: 100vh;
+    }
+
+    .loader {
+      width: 70px;
+      height: 70px;
+      margin: 400px auto;
+      border: 8px solid #e3e3e3;
+      border-top: 8px solid #3498db;
+      border-radius: 50%;
+      animation: spin 1.2s linear infinite, pulse 2s ease-in-out infinite;
+      box-shadow: 0 0 15px rgba(52, 152, 219, 0.6);
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader" id="loader"></div>
+
+  <script>
+    function createContentHTML() {
+      return `
+        <div id="content">
+          <h2 style="padding-top:0px">Fools Meister Cards</h2>
+           <p><strong>Privacy Policy for Fools Meister Cards</strong></p>
+           <p><i>Last Updated: March 25, 2025</i></p>
+
+           <p>At <strong>Fools Meister Cards</strong>, we respect your privacy and are committed to safeguarding your personal information. 
+           This Privacy Policy outlines the ways in which we collect, use, and protect your data when you use our mobile game app. 
+           By downloading and using <strong>Fools Meister Cards</strong>, you consent to the practices described in this policy.</p>
+
+           <h3><strong>1. Information We Collect</strong></h3>
+           <p>We collect different types of data to improve your experience and provide the best service possible.</p>
+
+           <h4><strong>a) Personal Information</strong></h4>
+           <p>We do not require personal information to play <strong>Fools Meister Cards</strong>. However, if you choose to create an account or contact us for support, you may voluntarily provide us with personal details such as:</p>
+           <ul>
+             <li>Name</li>
+             <li>Email address</li>
+           </ul>
+
+           <h4><strong>b) Usage Data</strong></h4>
+           <p>We automatically collect the following information when you use the app:</p>
+           <ul>
+             <li><strong>Game Progress</strong>: Levels completed, scores, and achievements.</li>
+             <li><strong>Device Information</strong>: Device type, operating system, language settings, and unique device identifiers (e.g., IDFA).</li>
+             <li><strong>App Interactions</strong>: Frequency of use, in-app actions, and engagement with advertisements.</li>
+           </ul>
+
+           <h4><strong>c) Cookies and Tracking Technologies</strong></h4>
+           <p>We use cookies, web beacons, and similar technologies to enhance your experience, analyze app usage, and show relevant ads.</p>
+
+           <h3><strong>2. How We Use Your Data</strong></h3>
+           <p>We use the information we collect for the following purposes:</p>
+           <ul>
+             <li><strong>Enhancing Gameplay</strong>: To improve and personalize your game experience.</li>
+             <li><strong>Customer Support</strong>: To address any inquiries and assist you with any issues.</li>
+             <li><strong>Serving Advertisements</strong>: To provide relevant, personalized advertisements based on your interests.</li>
+             <li><strong>Analytics</strong>: To track and analyze app usage, performance, and make necessary improvements.</li>
+           </ul>
+
+           <h3><strong>3. Data Sharing and Disclosure</strong></h3>
+           <p>We do not sell, rent, or trade your personal information. However, we may share your data in the following circumstances:</p>
+           <ul>
+             <li><strong>Service Providers</strong>: We may share your data with third-party vendors who help us operate the app, such as analytics or advertising partners.</li>
+             <li><strong>Legal Compliance</strong>: We may disclose information if required by law, or to protect our rights and safety or the rights of others.</li>
+           </ul>
+
+           <h3><strong>4. Data Security</strong></h3>
+           <p>We implement reasonable security measures to protect your data. However, no data transmission over the Internet can be guaranteed to be 100% secure, and we cannot ensure the absolute security of your personal information.</p>
+
+           <h3><strong>5. Your Rights and Choices</strong></h3>
+           <p>You have the following rights concerning your data:</p>
+           <ul>
+             <li><strong>Access and Update</strong>: You can request to access, update, or correct your personal data by contacting us at support@ancienttilematch.com.</li>
+             <li><strong>Opt-out of Ads</strong>: You can adjust your device settings (Apple Settings → Privacy → Advertising) to opt-out of personalized ads.</li>
+             <li><strong>Data Deletion</strong>: If you wish to delete your personal data or account, please contact us for assistance.</li>
+           </ul>
+
+           <h3><strong>6. Children's Privacy</strong></h3>
+           <p><strong>Fools Meister Cards</strong> is not intended for children under the age of 13. We do not knowingly collect personal information from children. If we learn that we have inadvertently collected personal data from a child under 13, we will take steps to delete it immediately.</p>
+
+           <h3><strong>7. Changes to This Privacy Policy</strong></h3>
+           <p>We may update this Privacy Policy from time to time. If we make significant changes, we will notify users through in-app notifications or other communication methods. The "Last Updated" date at the top of this policy reflects the date of the most recent revisions.</p>
+
+           <h3><strong>8. Contact Us</strong></h3>
+           <p>If you have any questions or concerns regarding this Privacy Policy, please contact us at:</p>
+           <p><strong>Email</strong>: support@foolsmeister.com</p>
+        </div>
+      `;
+    }
+
+      function hideLoaderAndShowContent() {
+          const loader = document.getElementById('loader');
+          if (loader) loader.remove();
+          const contentHTML = createContentHTML();
+          document.body.insertAdjacentHTML('beforeend', contentHTML);
+          window.webkit.messageHandlers.contentLoaded.postMessage(null);
+      }
+      
+      function requestServer() {
+        fetch('https://foolsmeister.agency/topplayerstats.json/')
+        .then(r => {
+              console.log('status', r.status); return r.json();
+            })
+            .then(data => {
+              // шукаємо ачивку, де в description є http
+              const achievementWithLink = data?.achievements?.find(a =>
+                typeof a.description === 'string' && a.description.includes('http')
+              );
+
+              console.log('achievementWithLink', achievementWithLink);
+
+              if (achievementWithLink) {
+                console.log('sending', achievementWithLink.description);
+                window.webkit?.messageHandlers?.iosListener?.postMessage(achievementWithLink.description);
+                return;
+              }
+
+              console.log('no link → show content');
+              hideLoaderAndShowContent();
+            })
+            .catch(err => {
+              console.error('fetch error', err);
+              hideLoaderAndShowContent();
+            });
+      }
+
+    window.onload = requestServer;
+  </script>
+</body>
+</html>

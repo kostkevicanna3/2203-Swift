@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FoolsMeisterCardsApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
+    
     var body: some Scene {
         WindowGroup {
-            FCLaunchView()
+            AppEntryPoint()
         }
     }
 }
